@@ -1,0 +1,95 @@
+@charset "utf-8";
+body {
+  background-color: blue;
+}
+/*我是不会被编译的*/
+.box {
+  width: 300px;
+  height: 100px;
+  background: green;
+  border: solid  1px pink;
+}
+.border {
+  border: solid  1px pink;
+}
+.test_mix2 {
+  border: solid #ffff00 30px;
+}
+.test_mix3 {
+  border: solid #ffff00 10px;
+}
+.radius_test {
+  width: 100px;
+  height: 100px;
+  background: pink;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+.tri_test {
+  border-width: 100px;
+  border-color: transparent transparent #ccc transparent;
+  border-style: dashed dashed solid dashed ;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.match {
+  width: 100px;
+  height: 150px;
+  background-color: green;
+  position: relative;
+}
+.box_1 {
+  width: 620px;
+  color: #e0e0e0;
+}
+/*
+.list{}
+.list li{}
+.list a{}
+.list span{}
+
+*/
+.list {
+  width: 600px;
+  margin: 30px auto;
+  padding: 0;
+  list-style: none;
+}
+.list li {
+  height: 30px;
+  line-height: 30px;
+  background-color: pink;
+  margin-bottom: 5px;
+}
+.list a {
+  float: left;
+}
+.list a:hover {
+  color: red;
+}
+.list span {
+  float: right;
+}
+.content {
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+}
+.content_item1 {
+  width: 20px;
+  height: 20px;
+  background: pink;
+}
+.test_arguments {
+  border: 40px #008000 solid;
+}
+.test_3 {
+  width: calc(300px-20px);
+}
+.test_important {
+  -webkit-border-radius: 5px !important;
+  -moz-border-radius: 5px !important;
+  border-radius: 5px !important;
+}
